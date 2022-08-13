@@ -1,0 +1,367 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Libre+Franklin:wght@700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+.nav-links{
+    position: fixed;
+    display: flex;
+    height: 55px;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 40px;
+    padding: 10px;
+    background: rgb(0, 0, 0);
+    color: white;
+    width: 100%;
+    z-index: 20;
+
+}
+
+span{
+    font-weight: bolder;
+    text-decoration: underline;
+    color: green;
+}
+
+body{
+    background: hsla(148, 89%, 78%, 1);
+
+    background: linear-gradient(45deg, hsla(148, 89%, 78%, 1) 0%, hsla(210, 81%, 22%, 1) 100%);
+    
+    background: -moz-linear-gradient(45deg, hsla(148, 89%, 78%, 1) 0%, hsla(210, 81%, 22%, 1) 100%);
+    
+    background: -webkit-linear-gradient(45deg, hsla(148, 89%, 78%, 1) 0%, hsla(210, 81%, 22%, 1) 100%);
+}
+#logo-div{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+.logo{
+    margin-left: 40px;
+    font-size: 2rem;
+}
+.searchbar{
+    margin-left: 170px;
+    height: 35px;
+}
+
+nav:nth-child(2){
+    left: 350px;
+}
+
+.nav-branding{
+    margin-left: 40px;
+    color: white;
+}
+.hamburger-menu{
+    display: none;
+}
+
+.form{
+    display: flex;
+    justify-content: left;
+}
+.nav-search{
+    left: 300px;
+    border-radius: 10px;
+}
+
+nav ul{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-evenly;
+}
+
+nav ul li a {
+    text-decoration: none;
+    margin-right: 25px;
+    color: white;
+}
+
+nav ul li a:hover{
+    background: green;
+    color: black;
+    padding: 12px;
+    transition: all 600ms ease-in-out;
+}
+.nav-search-btn{
+    padding: 6px 10px;
+    border-radius: 4px;
+}
+.container{
+    display: flex;
+    height: 100%;
+    margin: 0 auto;
+    max-width: 95%;
+    background: hsla(148, 89%, 78%, 1);
+    background: linear-gradient(45deg, hsla(148, 89%, 78%, 1) 0%, hsla(210, 81%, 22%, 1) 100%);
+    background: -moz-linear-gradient(45deg, hsla(148, 89%, 78%, 1) 0%, hsla(210, 81%, 22%, 1) 100%);
+    background: -webkit-linear-gradient(45deg, hsla(148, 89%, 78%, 1) 0%, hsla(210, 81%, 22%, 1) 100%);
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding-top: 245px;
+    overflow: hidden;
+}
+
+.quick-links{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 95%;
+    height: 100px;
+    /* background: red; */
+    /* border: 2px solid black; */
+    position: relative;
+    top: 170px;
+}
+
+.ql-btns{
+    display: flex;
+    justify-content: start;
+    align-items: end;
+    /* background: black; */
+    color: white;
+}
+
+.select-menu {
+    height: 55px;
+    width: 140px;
+    border-radius: 8px;
+}
+
+.btn-style-1{
+    width: 130px;
+    height: 50px;
+    padding: 10px;
+    margin: 12px 10px;
+    border-radius: 4px;
+}
+
+.btn-style{
+    width: 120px;
+    height: 55px;
+    padding: 10px;
+    /* margin: 8px 10px; */
+    border-radius: 11px;
+    margin-left: 8px;
+    border: none;
+    font-size: .80rem;
+    font-weight: bolder;
+    color: white;
+}
+
+.btn-style:hover{
+    background-color: green;
+    transition: all 600ms ease-in-out;
+
+}
+
+.trip-link{
+    display: inline-block;
+    background: black;
+    color: white;
+    margin-right: 30px;
+}
+
+.trip-btn{
+    padding: 8px;
+    border-radius: 5px;
+}
+
+.trip-btn:hover{
+    background: green;
+}
+.menu{
+    display: none;
+}
+.card {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: end;
+    width: 350px;
+    height: 180px;
+    /* background: lightgreen; */
+    /* border: 2px solid black; */
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    box-shadow: 7px 7px;
+}
+
+.card:nth-of-child(3){
+    right: 5px;
+}
+
+.img-bg{
+    margin: 0;
+    padding: 0;
+    /* position: absolute; */
+    display: inline-block;
+    max-width: 100%;
+    max-height: 176px;
+    /* z-index: 1; */
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.inner-card {
+    position: absolute;
+    padding: 5px;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    opacity: 0;
+    background-color: transparent;
+    transition: opacity 500ms ease-in-out, background-color 400ms ease-in-out;
+    z-index: 3;
+    border: 0px 2px solid black;
+    border-radius: 4px;
+}
+.inner-card h5{
+    font-size: large;
+    font-weight: bolder;
+    padding-bottom: 10px;
+    background: black;
+    padding-left: 5px;
+    width: 45px;
+    height: 30px;
+    color: white;
+    border-radius: 5px;
+
+}
+.inner-card p{
+    font-size: small;
+    padding-bottom: 8px;
+    font-weight: bold;
+}
+
+.inner-card a{
+    color: white;
+
+}
+.card:hover .inner-card {
+    cursor: pointer;
+    opacity: 1;
+    background-color: rgba(73, 73, 73, 0.5);
+    transition: all 500ms ease-in-out;
+    width: 100%;
+}
+/* .card:nth-of-type(3){
+    justify-content: end;
+    align-items: end;
+} */
+.img-div{
+    position: absolute;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    
+}
+.card-img{
+
+    max-height: 32px;
+    width: 32px;
+    display: inline-block;
+    margin-left: 5px;
+    
+}
+
+@media only screen and (max-width: 886px){
+    header{
+        display: flex;
+        justify-content: space-between;
+    }
+    .hamburger-menu{
+        display: inline-block;
+    }
+    .nav-ul{
+        display: none;
+    }
+    #form{
+        display: none;
+    }
+    .trip-btn{
+        display: none;
+    }
+
+    .card{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 45px;
+        max-width: 208px;
+        min-height: 255px;
+        border-radius: 10px solid;
+        box-shadow: 4px 4px;
+    }
+
+    .img-bg{
+        object-fit: cover;
+        height: 254px;
+    }
+    .inner-card {
+        padding: 5px;
+        height: 150px;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        opacity: 0;
+        background-color: transparent;
+        transition: opacity 500ms ease-in-out, background-color 400ms ease-in-out;
+    }
+
+        .hamburger-menu {
+            display: block;
+            width: 40px;
+            height: 40px;
+            margin: 0;
+        }
+    
+        .hamburger-menu img {
+            display: block;
+            width: 32px;
+            height: 32px;
+            margin: 0;
+        }
+    
+        .navItems {
+            display: none;
+            height: 100%;
+            width: 350px;
+            color: black;
+            background: white;
+            z-index: 10;
+        }
+    
+        li a {
+            color: black;
+        }
+    
+        .active {
+            display: block;
+            height: 400px;
+            width: 400px;
+            background: rgb(228, 6, 6);
+            z-index: 10;
+        }
+
+        .quick-links{
+            display: none;
+        }
+}

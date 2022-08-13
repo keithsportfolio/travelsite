@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">     
+    <!-- <script src="{% static 'js/script.js' %}"></script>
+    -->
+</head>
+
+<body>
+    <!-- Video Source -->
+    <!-- https://www.pexels.com/video/aerial-view-of-beautiful-resort-2169880/ -->
+    <section class="showcase">
+        <header>
+            <h2 class="logo">Travel<span class="logo-2">Site</span> </h2>
+            <div class="toggle"></div>
+        </header>
+        <video src="../static/img/video.mp4" muted loop autoplay></video>
+        <div class="overlay"></div>
+        <div class="text">
+            <h2>Travel more think less</h2>
+            <h3>Find your next Destination.</h3>
+            <p>Looking for your next get away?  Unsure where to go? We can help! 
+                See where your friends are headed. TravelSite is a social platform that allows you to share your 
+                memories from across the the globe. Interact with others to find your nezt adventure.
+                TravelSite partners with major airlines to for exclusive deals.
+            </p>
+            <a href="/signup">Explore</a>
+        </div>
+        <ul class="social">
+            <li><a href="#"><img src="https://i.ibb.co/x7P24fL/facebook.png"></a></li>
+            <li><a href="#"><img src="https://i.ibb.co/Wnxq2Nq/twitter.png"></a></li>
+            <li><a href="#"><img src="https://i.ibb.co/ySwtH4B/instagram.png"></a></li>
+        </ul>
+    </section>
+    <div class="menu">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="/signup">Register</a></li>
+            <li><a href="#">Destinations</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Dashboard</a></li>
+        </ul>
+    </div>
+
+    <script>
+            const menuToggle = document.querySelector('.toggle');
+            const showcase = document.querySelector('.showcase');
+
+            menuToggle.addEventListener('click', () => {
+                menuToggle.classList.toggle('active');
+                showcase.classList.toggle('active');
+            })
+    </script>
+</body>
+</html>

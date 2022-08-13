@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/signup.css' %}">
+    <title>Document</title>
+</head>
+<body>
+    {% if messages %}
+    {% for message in messages %}
+        <p>{{message}}</p>
+    {% endfor %}
+    {% endif %}   
+    <header>
+            <a class="back-btn" href="/"><img src="../static/img/left-arrow.png" alt=""></a>
+    </header>
+    <div class="container">
+
+        
+        <div class="form-container">
+            <h4>Sign up is quick and easy.</h4>
+            <form action="/register" method="post" class="reg-form">
+                {% csrf_token %}
+                        <p><input class="field" type="text" name="fname" placeholder="First Name" id=""></p>
+                        <p><input class="field" type="text" name="lname" placeholder="Last Name" id=""></p>
+                        <p><input class="field" type="text" name="uname" placeholder="Username" id=""></p>
+                        <p><input class="field" type="text" name="email" placeholder="Email" id=""></p>
+                        <p><input class="field" type="password" name="cpass" placeholder="Confirm Password"> <img src="../static/img/padlock.png" alt=""></p>
+                        <p><input type="password" class="field"  name="pass" placeholder="Password"> <img src="../static/img/padlock.png" alt=""></p>
+                        <input class="form-btn" type="submit" value="Register">
+                        <p><a href="/signin">Already registered? Login.</a></p>
+            </form>
+        </div>
+
+    </div>
+</body>
+</html>

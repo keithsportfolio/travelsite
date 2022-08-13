@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav class="nav-links">
+            <div class="logo">Travel<span>Site</span></div>
+            <form id="form">
+                            <input type="search" class="searchbar" id="query" name="q" placeholder="Search...">
+                            <button class="nav-search-btn">Search</button>
+            </form>
+            <ul class="nav-ul">
+                <li><a href="http://">Destinations</a></li>
+                <li><a href="http://">Blog</a></li>
+                <li><a href="http://">About</a></li>
+                <li><a href="/">Logout</a></li>
+            </ul>
+            <div class="nav-btn">
+                <a href="/new_trip" class="trip-link"><button class="trip-btn">Add Trip</button></a>
+            </div>
+            <div class="hamburger-menu">
+                <img src="../static/img/more.png" alt="">
+                <div class="navItems">
+                    <ul>
+                        <li><a href="http://">Destinations</a></li>
+                        <li><a href="http://">Blog</a></li>
+                        <li><a href="http://">About</a></li>
+                        <li><a href="http://">Contact</a></li>
+                    </ul>
+                </div>
+                </nav>
+            </div>
+    </header>
+    <section class="quick-links">
+        <div class="ql-btns">
+            <select name="" id="" class="select-menu">Browse by
+                <option value="">Highest Rated</option>
+                <option value="">Newest</option>
+                <option value="">Random</option>
+                <option value="">USA& Canada</option>
+            </select>
+            <button class="btn-style">Europe</button>
+            <button class="btn-style">Africa</button>
+            <button class="btn-style">Asia</button>
+            <button class="btn-style">North America</button>
+            <button class="btn-style">South America</button>
+            <button class="btn-style">Austraila</button>
+            <button class="btn-style">Antartica</button>
+        </div>
+    </section>
+    <div class="container">
+        <div class="card">
+            <img src="https://images.pexels.com/photos/2507007/pexels-photo-2507007.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="" class="img-bg">
+            <div class="inner-card">
+                <h5>Title</h5>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt, libero?</p>
+                <a href="">Link goes here</a>
+            </div>
+            <div class="img-div">
+                <img src="../static/img/search.png" class="card-img" alt="">
+            </div>
+        </div>
+        <div class="card">
+            <img class="img-bg" src="https://images.pexels.com/photos/3889843/pexels-photo-3889843.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="">
+            <div class="inner-card">
+                <h5>Title</h5>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt, libero?</p>
+                <a href="">Link goes here</a>
+            </div>
+            <div class="img-div">
+                <img src="../static/img/search.png" class="card-img" alt="">
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://images.pexels.com/photos/6181092/pexels-photo-6181092.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="" class="img-bg">
+            <div class="inner-card">
+                <h5>Title</h5>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt, libero?</p>
+                <a href="">Link goes here</a>
+            </div>
+            <div class="img-div">
+                <img src="../static/img/search.png" class="card-img" alt="">
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://images.pexels.com/photos/4945061/pexels-photo-4945061.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="" class="img-bg">
+            <div class="inner-card">
+                <h5>Title</h5>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt, libero?</p>
+                <a href="">Link goes here</a>
+            </div>
+            <div class="img-div">
+                <img src="../static/img/search.png" class="card-img" alt="">
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://images.pexels.com/photos/4385497/pexels-photo-4385497.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="" class="img-bg">
+            <div class="inner-card">
+                <h5>Title</h5>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt, libero?</p>
+                <a href="">Link goes here</a>
+            </div>
+            <div class="img-div">
+                <img src="../static/img/search.png" class="card-img" alt="">
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://images.pexels.com/photos/1319829/pexels-photo-1319829.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="" class="img-bg">
+            <div class="inner-card">
+                <h5>Title</h5>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt, libero?</p>
+                <a href="">Link goes here</a>
+            </div>
+            <div class="img-div">
+                <img src="../static/img/search.png" class="card-img" alt="">
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://images.pexels.com/photos/2901215/pexels-photo-2901215.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="" class="img-bg">
+            <div class="inner-card">
+                <h5>Title</h5>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt, libero?</p>
+                <a href="">Link goes here</a>
+            </div>
+            <div class="img-div">
+                <img src="../static/img/search.png" class="card-img" alt="">
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://images.pexels.com/photos/7263343/pexels-photo-7263343.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="" class="img-bg">
+            <div class="inner-card">
+                <h5>Title</h5>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt, libero?</p>
+                <a href="">Link goes here</a>
+            </div>
+            <div class="img-div">
+                <img src="../static/img/search.png" class="card-img" alt="">
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://images.pexels.com/photos/3375877/pexels-photo-3375877.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="" class="img-bg">
+            <div class="inner-card">
+                <h5>Title</h5>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt, libero?</p>
+                <a href="">Link goes here</a>
+            </div>
+            <div class="img-div">
+                <img src="../static/img/search.png" class="card-img" alt="">
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://images.pexels.com/photos/7263347/pexels-photo-7263347.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="" class="img-bg">
+            <div class="inner-card">
+                <h5>Title</h5>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt, libero?</p>
+                <a href="">Link goes here</a>
+            </div>
+            <div class="img-div">
+                <img src="../static/img/search.png" class="card-img" alt="">
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://images.pexels.com/photos/5118532/pexels-photo-5118532.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="" class="img-bg">
+            <div class="inner-card">
+                <h5>Title</h5>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt, libero?</p>
+                <a href="">Link goes here</a>
+            </div>
+            <div class="img-div">
+                <img src="../static/img/search.png" class="card-img" alt="">
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://images.pexels.com/photos/1565520/pexels-photo-1565520.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="" class="img-bg">
+            <div class="inner-card">
+                <h5>Title</h5>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt, libero?</p>
+                <a href="">Link goes here</a>
+            </div>
+            <div class="img-div">
+                <img src="../static/img/search.png" class="card-img" alt="">
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://images.pexels.com/photos/1090608/pexels-photo-1090608.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="" class="img-bg">
+            <div class="inner-card">
+                <h5>Title</h5>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt, libero?</p>
+                <a href="">Link goes here</a>
+            </div>
+            <div class="img-div">
+                <img src="../static/img/search.png" class="card-img" alt="">
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://images.pexels.com/photos/1090608/pexels-photo-1090608.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="" class="img-bg">
+            <div class="inner-card">
+                <h5>Title</h5>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt, libero?</p>
+                <a href="">Link goes here</a>
+            </div>
+            <div class="img-div">
+                <img src="../static/img/search.png" class="card-img" alt="">
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://images.pexels.com/photos/1090608/pexels-photo-1090608.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="" class="img-bg">
+            <div class="inner-card">
+                <h5>Title</h5>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt, libero?</p>
+                <a href="">Link goes here</a>
+            </div>
+            <div class="img-div">
+                <img src="../static/img/search.png" class="card-img" alt="">
+            </div>
+        </div>
+
+    </div>
+    <div class="menu">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="/signup">Register</a></li>
+            <li><a href="#">Destinations</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Dashboard</a></li>
+        </ul>
+    </div>
+
+    <script>
+            $(document).ready(function () {
+                $('.hamburger-menu').click(function () {
+                    $('.navItems').toggleClass('active')
+                });
+            });
+
+    </script>
+</body>
+</html>

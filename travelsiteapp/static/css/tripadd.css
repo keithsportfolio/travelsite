@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Libre+Franklin:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 90%;
+    background: hsla(148, 89%, 78%, 1);
+    background: linear-gradient(45deg, hsla(148, 89%, 78%, 1) 0%, hsla(210, 81%, 22%, 1) 100%);
+    background: -moz-linear-gradient(45deg, hsla(148, 89%, 78%, 1) 0%, hsla(210, 81%, 22%, 1) 100%);
+    background: -webkit-linear-gradient(45deg, hsla(148, 89%, 78%, 1) 0%, hsla(210, 81%, 22%, 1) 100%);
+    margin: 100px;
+}
+
+.trip-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 450px;
+    height: 450px;
+    background: grey;
+    box-shadow: 12px 12px black;
+}
+.back-btn{
+    margin-right: 50px;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h2{
+    color: white;
+}
+/*  */
+
+.form-control{
+    border: 2px solid black;
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/tripadd.css' %}">
+    <title>Document</title>
+</head>
+<body>
+    
+    {% block content %}
+    <a href="/home"><img src="../static/img/left-arrow2.png" class="back-btn "alt=""></a>
+    <div class="container">
+            
+            <div class="trip-form">
+                <h2>Add new trips here.</h2>
+                <form method="POST" enctype="multipart/form-data" class="form">
+                    {% csrf_token %}
+                    {{form.as_p}}
+                    <button type="submit">submit</button>
+                </form>
+            </div>
+            
+            
+    </div>
+    {% endblock %}
+</body>
+</html>
