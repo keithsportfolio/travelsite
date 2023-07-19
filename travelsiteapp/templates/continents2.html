@@ -31,53 +31,11 @@
                         <li><a href="/home">Destinations</a></li>
                         <li><a href="#">Blog</a></li>
                         <li><a href="/logout">Logout</a></li>
-                        <li><a href="/add_trip">Add trip</a></li>
+                        <li><a href="/add_trip">Add Trip</a></li>
                     </ul>
                 </div>
             </nav>
     </header>
-    <section class="quick-links">
-        <div class="ql-btns">
-            <select name="" id="" class="select-menu">Browse by
-                <option value="">Highest Rated</option>
-                <option value="">Newest</option>
-                <option value="">Random</option>
-                <option value="">USA & Canada</option>
-            </select>
-            <form action="/go_to_continents" method="post">
-                {% csrf_token %}
-                <input type="hidden" name="continent" value="Europe">
-                <button class="btn-style" >Europe</button>
-            </form>
-            <form action="/go_to_continents" method="post">
-                {% csrf_token %}
-                <input type="hidden" name="continent" value="Africa">
-                <button class="btn-style">Africa</button>
-            </form>
-            <form action="/go_to_continents" method="post">
-                {% csrf_token %}
-                <input type="hidden" name="continent" value="Asia">
-                <button class="btn-style" >Asia</button>
-            </form>
-            <form action="/go_to_continents" method="post">
-                {% csrf_token %}
-                <input type="hidden" name="continent" value="North America">
-                <button class="btn-style">North America</button>
-            </form>
-            <form action="/go_to_continents" method="post">
-                {% csrf_token %}
-                <input type="hidden" name="continent" value="South America">
-                <button class="btn-style" >South America</button>
-            </form>
-            <form action="/go_to_continents" method="post">
-                {% csrf_token %}
-                <input type="hidden" name="continent" value="Australia">
-                <button class="btn-style">Australia</button>
-            </form>
-
-
-        </div>
-    </section>
     <div class="container">
         {% for trip in trips %}
             <div class="card">
@@ -94,15 +52,7 @@
             </div>
         {% endfor %}
     </div>
-    <div class="menu">
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="/signup">Register</a></li>
-            <li><a href="#">Destinations</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Dashboard</a></li>
-        </ul>
-    </div>
+
 
     <script>
             $(document).ready(function () {

@@ -71,6 +71,7 @@ class Trip(models.Model):
     creator = models.ForeignKey(User, related_name = 'trips_uploaded',on_delete= CASCADE, null=True)
     favoriter = models.ManyToManyField(User, related_name= 'fav_trips')
     photo = models.ImageField(upload_to='trips/', null=True, blank =True)
+    photo_url = models.CharField(max_length = 500, null=True)
     created_at = models.DateTimeField(auto_now_add=True, null=True)
     updated_at = models.DateTimeField(auto_now=True, null=True)
 

@@ -15,6 +15,9 @@ urlpatterns = [
     path('signin', views.signIn),
     path('new_trip/', views.tripAdd),
     path('createTrip/', views.createTrip),
+    path('logout', views.logout),
+    path('continents', views.continentsPage),
+    path('go_to_continents', views.showTripByContinent)
 ]
 
 if settings.DEBUG: 

@@ -10,21 +10,31 @@
 </head>
 <body>
     
-    {% block content %}
-    <a href="/home"><img src="../static/img/left-arrow2.png" class="back-btn "alt=""></a>
+    <!-- {% block content %} -->
+    
+    <a href="/home"><img src="../static/img/back.png" class="back-btn "alt=""></a>
     <div class="container">
-            
-            <div class="trip-form">
-                <h2>Add new trips here.</h2>
-                <form method="POST" enctype="multipart/form-data" class="form">
+            <div class="trip-form"> 
+                <form action="/createTrip/" class="form" method="POST"  >
+                    <h2>Add trips here.</h2>
                     {% csrf_token %}
-                    {{form.as_p}}
-                    <button type="submit">submit</button>
+                    <!-- {{form.as_p}} -->
+                    <label for="city">City</label>
+                    <p><input class="field" type="text" name="city" placeholder="City" id=""></p>
+                    <label for="city">Country</label>
+                    <p><input class="field" type="text" name="country" placeholder="Country" id=""></p>
+                    <label for="city">Continent</label>
+                    <p><input class="field" type="text" name="continent" placeholder="Continent" id=""></p>
+                    <label for="city">Description</label>
+                    <p><input class="field" type="text" name="description" placeholder="Description" id=""></p>
+                    <label for="city">Photo URL</label>
+                    <p><input class="field" type="text" name="photo_url" placeholder="Photo URL" id=""></p>
+                    <button type="submit" class="trip-fm-btn">submit</button>
                 </form>
-            </div>
-            
-            
+            </div>   
     </div>
-    {% endblock %}
+
+    <!-- {% endblock %} -->
+    
 </body>
 </html>

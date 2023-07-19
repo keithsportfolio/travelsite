@@ -1,78 +1,67 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-}
-
 body {
     background: hsla(148, 89%, 78%, 1);
-
     background: linear-gradient(45deg, hsla(148, 89%, 78%, 1) 0%, hsla(210, 81%, 22%, 1) 100%);
-    
     background: -moz-linear-gradient(45deg, hsla(148, 89%, 78%, 1) 0%, hsla(210, 81%, 22%, 1) 100%);
-    
     background: -webkit-linear-gradient(45deg, hsla(148, 89%, 78%, 1) 0%, hsla(210, 81%, 22%, 1) 100%);
-    
     filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#95F9C3", endColorstr="#0B3866", GradientType=1 );
     height: 100vh;
 }
-.back-btn{
-    margin-left: 30px;
-    
+
+.navbar {
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
 }
-.container{
+
+.navbar-toggler {
+    color: #000;
+}
+
+.form-container {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    z-index: 2;
-}
-h4{
-    width: 170px;
-    font-size: xx-large;
-    color: #ffff;
-}
-.form-container{
-    display: flex;
-    width: 450px;
-    height: 450px;
-    background: grey;
+    width: 400px;
+    height: 400px;
+    background: #1e1e1e;
     opacity: 0.75;
     justify-content: center;
     align-items: center;
-    margin-top: 5vh;
-    box-shadow: 10px 10px rgb(0, 0, 0);
-}
-.reg-form{
-    /* display: flex; */
-    margin: 0 auto;
-    z-index: 10;
+    margin-top: 10vh;
+    box-shadow: 10px 10px 0 0 rgb(0, 0, 0);
 }
 
-.form-btn{
-    position: relative;
-    margin: 0 auto;
+.form-container h4 {
+    font-size: 2rem;
+    color: #fff;
+}
+
+.reg-form {
+    margin: 20px 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-control {
+    background: transparent;
     height: 35px;
-    width: 75px;
-    background: black;
-    color: white;
-    border: 2px solid white;
-    border-radius: 6px;
-    right: -60px;
-}
-
-.field{
-    /* background: rgb(26, 24, 24); */
-    height: 32px;
-    display: block;
-    color: black;
+    color: #000;
     font-weight: bold;
     border-radius: 4px;
 }
 
-p{
-    display: flex;
+.form-btn {
+    margin-top: 20px;
+    width: 75px;
 }
 
+.reg-log-link {
+    color: #fff;
+    font-weight: bold;
+}

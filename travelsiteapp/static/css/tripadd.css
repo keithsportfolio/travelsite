@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Libre+Franklin:wght@700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -12,7 +11,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 90%;
+    max-width: 95%;
     background: hsla(148, 89%, 78%, 1);
     background: linear-gradient(45deg, hsla(148, 89%, 78%, 1) 0%, hsla(210, 81%, 22%, 1) 100%);
     background: -moz-linear-gradient(45deg, hsla(148, 89%, 78%, 1) 0%, hsla(210, 81%, 22%, 1) 100%);
@@ -20,14 +19,28 @@ body{
     margin: 100px;
 }
 
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 20px; */
+}
+
 .trip-form{
     display: flex;
     justify-content: center;
     align-items: center;
     width: 450px;
-    height: 450px;
-    background: grey;
+    height: 365px;
+    padding: 20px;
+    color: white;
+    background: #1e1e1e;
     box-shadow: 12px 12px black;
+}
+
+.trip-form:nth-child(1){
+    display: block;
+    padding: 20px;
 }
 .back-btn{
     margin-right: 50px;
@@ -37,13 +50,22 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding: 20px;
 }
 
 h2{
+    left: 150px;
     color: white;
+    margin-left: 10px;
 }
-/*  */
+
 
 .form-control{
     border: 2px solid black;
+}
+
+.trip-fm-btn{
+    width: 60px;
+    padding: 6px;
+    margin-top: 5px;
 }

@@ -8,26 +8,25 @@
     <link rel="stylesheet" href="{% static 'css/signup.css' %}">
     <title>Document</title>
 </head>
-<body>
-    {% if messages %}
-    {% for message in messages %}
-        <p>{{message}}</p>
-    {% endfor %}
-    {% endif %}   
+<body>  
     <header>
-            <a class="back-btn" href="/"><img src="../static/img/left-arrow.png" alt=""></a>
+            <a class="back-btn" href="/"><img src="../static/img/back.png" alt=""></a>
     </header>
     <div class="container">
-
-        
         <div class="form-container">
-            <h4>Sign up is now and get started.</h4>
+            <h4>Sign in now to get started.</h4>
             <form action="/login" method="post" class="reg-form">
                 {% csrf_token %}
                         <p><input class="field" type="text" name="email" placeholder="Email" id=""></p>
                         <p><input class="field" type="password" name="password" placeholder="Password" id=""></p>
                         <input class="form-btn" type="submit" value="Login">
-                        <p><a href="/signup">Not registered? Click here.</a></p>
+                        <p><a href="/signup" class="reg-log-link">Not registered? Click here.</a></p>
+
+                        {% if messages %}
+                        {% for message in messages %}
+                            <h5>{{message}}</h5>
+                        {% endfor %}
+                        {% endif %} 
             </form>
 
         </div>

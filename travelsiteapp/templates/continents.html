@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav class="nav-links">
+            <div class="logo">Travel<span>Site</span></div>
+            <form id="form">
+                            <input type="search" class="searchbar" id="query" name="q" placeholder="Search...">
+                            <button class="nav-search-btn">Search</button>
+            </form>
+            <ul class="nav-ul">
+                <li><a href="/home">Destinations</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="/logout">Logout</a></li>
+            </ul>
+            <div class="nav-btn">
+                <a href="/new_trip" class="trip-link"><button class="trip-btn">Add Trip</button></a>
+            </div>
+        
+            <div class="hamburger-menu">
+                <img src="../static/img/more.png" alt="">
+                <div class="navItems">
+                    <ul>
+                        <li><a href="/home">Destinations</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="/logout">Logout</a></li>
+                        <li><a href="/add_trip">Add Trip</a></li>
+                    </ul>
+                </div>
+                </nav>
+            </div>
+    </header>
+    <div class="container">
+        {% for trip in trips %}
+            <div class="card">
+                <img src="{{trip.photo_url}}" alt="" class="img-bg">
+                <div class="inner-card">
+                    <h6 class="card-title">{{trip.city}}, {{trip.country}}</h6>
+                    <p class="card-d-text">{{trip.description}}</p>
+                    <!-- <a href="">Link goes here</a> -->
+                </div>
+                <div class="img-div">
+                    <img src="../static/img/search.png" class="card-img" alt="">
+                </div>
+                <div class="card-formatting"></div>
+            </div>
+        {% endfor %}
+    </div>
+</body>
+</html>
